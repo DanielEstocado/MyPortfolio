@@ -6,7 +6,7 @@ import About from './sections/About'
 
 const App = () => {
   return (
-    <main className='relative mx-auto'>
+    <main className='relative mx-auto overflow-x-hidden'>
       <NavigationBar/>
       <div className="absolute inset-0 -z-10 bg-cross"></div>
       <section className=' '  id="home">
