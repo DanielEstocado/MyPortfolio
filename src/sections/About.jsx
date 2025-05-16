@@ -21,7 +21,7 @@ const About = () => {
         
          {/* Dev Stack */}
          <section className='my-10'>
-            <h1 className='divider-start divider'>Dev Stack</h1>
+            <h1 className='divider-start divider mb-8'>Dev Stack</h1>
             <DevStackMarquee/>
          </section>
 

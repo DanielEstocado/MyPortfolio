@@ -42,7 +42,7 @@ const MarqueeFE = [
    },
    {
       imgURL: tailwindcss,
-      label: "Tailwind CSS" 
+      label: "Tailwind" 
    },
    {
       imgURL: react,
