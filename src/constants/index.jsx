@@ -1,0 +1,296 @@
+import { HomeIcon, UserCircleIcon, FolderIcon, PhoneIcon } from '@heroicons/react/24/solid'
+import { blender, csharp, cpp, css, firebase, figma, flutter, git, github, gitlab, godot, html, java, javascript, json, mysql, python, quasar, react, tailwindcss, vuejs } from "../assets/images";
+
+
+const tagColors = {
+  primary: "dark:bg-[#20221c] dark:text-primary bg-primary ",
+  secondary: "dark:bg-[#20221f] dark:text-secondary bg-secondary",
+  info: "dark:bg-[#20221f] dark:text-info bg-info",
+  warning: "dark:bg-[#2b221a] dark:text-warning bg-warning",
+  error: "dark:bg-[#2c1d1c] dark:text-error bg-warning",
+};
+
+const navigationLinks = [
+   { href: "#home", label: "Home", icon: <HomeIcon className="size-4 base-content group-hover:text-primary" /> },
+   { href: "#about", label: "About", icon: <UserCircleIcon className="size-4 base-content group-hover:text-primary" /> },
+   { href: "#projects", label: "Projects", icon: <FolderIcon className="size-4 base-content group-hover:text-primary" /> },
+   { href: "#contact", label: "Contact", icon: <PhoneIcon className="size-4 base-content group-hover:text-primary" /> },
+ ];
+
+ const personalInfo = [
+   // {
+   //    label: "Daniel Lagapa Estocado",
+   //    icon: "fa-regular fa-id-card"
+   // },
+   {
+      name: "Gender",
+      label: "Male",
+      icon: "fa-solid fa-mars"
+   },
+   {
+      name: "Nationality",
+      label: "Filipino",
+      icon: "fa-regular fa-flag"
+   },
+   {
+      name: "Phone",
+      label: "09156444230",
+      icon: "fa-solid fa-phone"
+   },
+   {
+      name: "Email",
+      label: "estocado.daniel143@gmail.com",
+      icon: "fa-regular fa-envelope"
+   },
+   {
+      name: "Location",
+      label: "Cavite, Philippines",
+      icon: "fa-solid fa-location-dot"
+   },
+   {
+      name: "Language",
+      label: "English | Tagalog",
+      icon: "fa-solid fa-language"
+   }
+ ]
+
+
+ const workExperience = [
+   {
+     company: { 
+       value: "Pixel8 Web Solutions and Consultancy Inc.", 
+       icon: "fa-solid fa-building"
+     },
+     position: { 
+       value: "Front End Developer (Trainee)", 
+       icon: "fa-solid fa-briefcase" 
+     },
+     date: { 
+       value: "2023 Jul - 2023 Sep", 
+       icon: "fa-solid fa-calendar-days" 
+     },
+     specialization: { 
+       value: "IT / Computer - Software Development", 
+       icon: "fa-solid fa-code"
+     },
+     indsutry: {
+      value: "Computer / Information Technology (Software)",
+      icon: "fa-solid fa-industry"
+     },
+     goal: {
+      value: "The goal of Pixel8 Web Solutions and Consultancy Inc.'s frontend development department is to develop the designs produced by the UI/UX design team into fully usable systems and programs. To accomplish this, they work with Figma files that provide the visual design and page layout. The department also adds necessary functionality to pages utilizing a JSON server and static data for preliminary testing and validation, which speeds up the backend development process. Quasar Framework, VueJS, Git, and Axios are some of the important technologies and tools used, with an emphasis on ensuring that all work complies with company standards.",
+      icon: "fa-solid fa-scroll"
+     },
+     tags: {
+      VueJs: "primary",
+      Quasar: "primary",
+      Axios: "primary",
+      Git: "warning",
+      Gitlab: "warning",
+      Figma: "warning",
+      Skype: "info",
+     }
+   },
+   
+ ];
+
+ const education = [
+   {
+      label: "Bachelor's / College Degree",
+      school: "Cavite State University - Main Campus Indang",
+      graduated: "2025 Sep (Running for Graduation)",
+      course: "Bachelor of Science in Computer Science",
+      
+   },
+   {
+      label: "Senior High School Diploma",
+      school: "Trece Martires City SHS",
+      graduated: "2020 Apr",
+      strand: "Science, Technology, Engineering and Mathematics (STEM)",
+   },
+   {
+      label: "High School Diploma",
+      school: "Trece Martires City National High School",
+      graduated: "2018 Apr",
+   },
+ ]
+
+// TODO: add social media links
+ const socials =[
+   {
+      label: "Facebook",
+      icon: "fa-brands fa-facebook-f"
+   },
+   {
+      label: "Messenger",
+      icon: "fa-brands fa-facebook-messenger"
+   },
+   {
+      label: "Github",
+      icon: "fa-brands fa-github-alt"
+   },
+   {
+      label: "LinkedIn",
+      icon : "fa-brands fa-linkedin-in"
+   },
+   {
+      label: "daily.dev",
+      icon: "fa-solid fa-code"
+   },
+   {
+      label: "Gmail",
+      icon: "fa-regular fa-envelope"
+   }
+ ]
+const MarqueePL = [
+   {
+      imgURL: python,
+      label: "Python" 
+   },
+   {
+      imgURL: cpp,
+      label: "C++" 
+   },
+   {
+      imgURL: csharp,
+      label: "C#" 
+   },
+   {
+      imgURL: java,
+      label: "Java" 
+   },
+   {
+      imgURL: javascript,
+      label: "Javascript" 
+   },
+   {
+      imgURL: json,
+      label: "JSON" 
+   },
+   {
+      imgURL: mysql,
+      label: "MySQL" 
+   },
+]
+
+const MarqueeFE = [
+   {
+      imgURL: html,
+      label: "HTML" 
+   },
+   {
+      imgURL: css,
+      label: "CSS" 
+   },
+   {
+      imgURL: tailwindcss,
+      label: "Tailwind CSS" 
+   },
+   {
+      imgURL: react,
+      label: "React" 
+   },
+   {
+      imgURL: vuejs,
+      label: "Vue.js" 
+   },
+   {
+      imgURL: quasar,
+      label: "Quasar" 
+   },
+   {
+      imgURL: firebase,
+      label: "Firebase" 
+   },
+]
+
+const MarqueeTP = [
+   {
+      imgURL: git,
+      label: "Git" 
+   },
+   {
+      imgURL: github,
+      label: "Github" 
+   },
+   {
+      imgURL: gitlab,
+      label: "Gitlab" 
+   },
+   {
+      imgURL: figma,
+      label: "Figma" 
+   },
+   {
+      imgURL: flutter,
+      label: "Flutter" 
+   },
+   {
+      imgURL: godot,
+      label: "Godot" 
+   },
+   {
+      imgURL: blender,
+      label: "Blender" 
+   },
+]
+
+const devStack = [
+   {
+      imgURL: python,
+      label: "Python" 
+   },
+   {
+      imgURL: cpp,
+      label: "C++" 
+   },
+   {
+      imgURL: csharp,
+      label: "C#" 
+   },
+   {
+      imgURL: java,
+      label: "Java" 
+   },
+   
+   {
+      imgURL: json,
+      label: "JSON" 
+   },
+   {
+      imgURL: javascript,
+      label: "Javascript" 
+   },
+   
+   
+   
+   {
+      imgURL: godot,
+      label: "Godot" 
+   },
+   
+   
+   {
+      imgURL: git,
+      label: "Git" 
+   },
+   {
+      imgURL: github,
+      label: "Github" 
+   },
+   {
+      imgURL: gitlab,
+      label: "Gitlab" 
+   },
+   {
+      imgURL: figma,
+      label: "Figma" 
+   },
+   {
+      imgURL: blender,
+      label: "Blender" 
+   },
+]
+
+
+ export { navigationLinks, socials, personalInfo, workExperience,education, devStack, tagColors };

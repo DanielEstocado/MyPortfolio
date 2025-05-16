@@ -1,0 +1,137 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+@plugin "tailwindcss-bg-patterns";
+
+@theme {
+  /* Fonts */
+  --font-oswald: 'Oswald', sans-serif;
+  --font-roboto-mono: 'Roboto Mono', monospace;
+  --font-raleway: 'Raleway', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+
+  /* Colors */
+  --my-color-primary: #747bff;
+  --my-color-secondary: #8260e2;
+  --color-white: #e2e8f0;
+  --color-offset-white: #90a1b9;
+  --color-slate: #45556c;
+  --color-black: #1d293d;
+  --color-dark-black: #14162e;
+  --color-darkest-black: #170c22;
+  --color-rgba-white: rgba(226, 232, 240, 0.089);
+
+  /* ForestNord Default Colors */
+  --color-forest-100: #1b1717;
+  --color-forest-200: #161212;
+  --color-forest-300: #110d0d;
+  --color-forest-primary: #1fb854;
+  --color-forest-text: #cac9c9;
+
+  --color-nord-100: #eceff4;
+  --color-nord-200: #e5e9f0;
+  --color-nord-300: #d8dee9;
+  --color-nord-primary: #5e81ac;
+  --color-nord-text: #2e3440;
+
+  --pattern-opacity-100: 1;
+  --pattern-opacity-80: 0.8;
+  --pattern-opacity-60: 0.6;
+  --pattern-opacity-40: 0.4;
+  --pattern-opacity-20: 0.2;
+  --pattern-opacity-10: 0.1;
+  --pattern-opacity-5: 0.05;
+
+  --pattern-size-1: 0.25rem;
+  --pattern-size-2: 0.5rem;
+  --pattern-size-4: 1rem;
+  --pattern-size-6: 1.5rem;
+  --pattern-size-8: 2rem;
+  --pattern-size-16: 4rem;
+  --pattern-size-20: 5rem;
+  --pattern-size-24: 6rem;
+  --pattern-size-32: 8rem;
+
+  
+  
+}
+
+@plugin "daisyui" {
+  themes: nord --default, forest --prefersdark, synthwave;
+  root: ":root";
+  include: ;
+  exclude: ;
+  prefix: ;
+  logs: true;
+  
+}
+
+/* @plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+  
+  --color-base-100: var(--color-black);
+  --color-base-200: var(--color-dark-black);
+  --color-base-300: var(--color-darkest-black);
+  --color-base-content: var(--color-white);
+  --color-primary: var(--my-color-secondary);
+  
+}
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+
+  --color-base-100: var(--color-white);
+  --color-base-200: var(--color-offset-white);
+  --color-base-300: var(--color-slate);
+  --color-base-content: var(--color-black);
+  --color-primary: var(--my-color-primary);
+
+}
+ */
+
+@custom-variant dark (&:where([data-theme=forest], [data-theme=forest] *));
+
+:root {
+  font-family: var(--font-roboto-mono), sans-serif;
+}
+
+::selection{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+
+
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+  .header-text {
+    @apply text-6xl font-oswald font-bold;
+  }
+
+  .mid-text {
+    @apply text-2xl  font-oswald;
+  }
+
+  .info-text {
+    @apply text-lg  font-roboto-mono;
+  }
+
+  .bg-cross {
+    @apply pattern-dots pattern-base-content pattern-bg-base-100
+    pattern-size-4 pattern-opacity-10  
+  }
+
+}
+
+  
