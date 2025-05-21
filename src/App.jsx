@@ -5,17 +5,21 @@ import Footer from './sections/Footer'
 import About from './sections/About'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
+import MyInfo from './sections/MyInfo'
 
 const App = () => {
   return (
     <main className='relative mx-auto overflow-x-hidden'>
       <NavigationBar/>
       <div className="absolute inset-0 -z-10 bg-cross"></div>
-      <section className=' '  id="home">
+      <section  id="home">
         <Hero/>
       </section>
-      <section className='max-w-6xl mx-auto ' id='about' >
+      <section  id='about'>
         <About/>
+      </section>
+      <section className='max-w-6xl mx-auto ' >
+        <MyInfo/>
       </section>
       <section className='max-w-6xl mx-auto lg:my-15' id='projects'>
         <Projects/>

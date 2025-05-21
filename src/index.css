@@ -35,12 +35,14 @@
   --color-forest-200: #161212;
   --color-forest-300: #110d0d;
   --color-forest-primary: #1fb854;
+  --color-forest-darker: #19a777;
   --color-forest-text: #cac9c9;
 
   --color-nord-100: #eceff4;
   --color-nord-200: #e5e9f0;
   --color-nord-300: #d8dee9;
   --color-nord-primary: #5e81ac;
+  --color-nord-darker: #526ba0;
   --color-nord-text: #2e3440;
 
   --pattern-opacity-100: 1;
@@ -131,6 +133,10 @@
 
   .info-text {
     @apply text-lg  font-roboto-mono;
+  }
+
+  .divider-header{
+    @apply divider lg:text-primary lg:uppercase lg:text-6xl lg:font-montserrat lg:font-bold;
   }
 
   .bg-cross {

@@ -6,42 +6,47 @@ import { tagColors } from '../../constants'
 const WorkTimeline = () => {
   return (
     <div>
-      <h1 className='divider divider-start'>Work Experience</h1>
-            <ul className='timeline timeline-vertical items-start timeline-snap-icon'>
-               {workExperience.map((item, index) => (
-                  <li key={index} className='!grid-cols-none gap-3'>
-                  {index !== 0 && <hr />}
-                  <div className="timeline-middle bg-base-content px-1 rounded-sm">
-                     <i className='fa-solid fa-computer text-base-100'></i>
-                  </div>
-                  <div className="timeline-end timeline-box px-8 py-5 ">
-                     {Object.keys(item).map((key) => {
-                        if (key === "tags") {
-                        return (
-                           <div key={key} className="flex flex-wrap gap-2 py-2 mt-3 ml-5">
-                              {Object.entries(item[key]).map(([tag, color]) => (
-                              <div 
-                                 key={tag} 
-                                 className={`badge badge-sm font-montserrat font-semibold px-3 w-20 ${tagColors[color] || "bg-gray-300 text-black"}`}
-                              >
-                                 {tag}
-                              </div>
-                              ))}
-                           </div>
-                        );
-                        }
-                        return (
-                        <div key={key} className="flex items-baseline gap-3 py-2 ">
-                           <i className={`${item[key].icon}`}></i>
-                           <span>{item[key].value}</span>
-                        </div>
-                        );
-                     })}
-                  </div>
-                  {index !== workExperience.length - 1 && <hr />}
-                  </li>
-               ))}
-            </ul>
+      <ul className='timeline timeline-vertical items-start timeline-snap-icon'>
+         {workExperience.map((item, index) => (
+            <li key={index} className='!grid-cols-none lg:gap-3'>
+            {index !== 0 && <hr />}
+            <div className="timeline-middle bg-primary px-1 rounded-full md:block hidden">
+               <i className='fa-solid fa-computer text-base-100'></i>
+            </div>
+            <div className="timeline-end timeline-box px-8 py-5 ">
+               <div className='flex items-baseline gap-3 py-2'>
+                  <i className={`${item.company.icon}`}></i>
+                  <h1 className='font-bold text-base uppercase'>{item.company.value}</h1>
+               </div>
+               <h3 className='italic mb-5 px-5 text-neutral-500'>{item.date.value}</h3>
+               <div className='flex items-baseline gap-3'>
+                  <i className={`${item.position.icon}`}></i>
+                  <h3 className='my-2 '>{item.position.value}</h3>
+               </div>
+               <div className='flex items-baseline gap-3'>
+                  <i className={`${item.specialization.icon}`}></i>
+                  <h3 className='my-2 '>{item.specialization.value}</h3>
+               </div>
+               <div className='flex items-baseline gap-3'>
+                  <i className={`${item.indsutry.icon}`}></i>
+                  <h3 className='my-2 '>{item.indsutry.value}</h3>
+               </div>
+               <div className='flex items-baseline gap-3'>
+                  <i className={`${item.goal.icon}`}></i>
+                  <h3 className='my-2 '>{item.goal.value}</h3>
+               </div>
+               <div className="flex flex-wrap gap-2 mt-4 px-5">
+                  {Object.entries(item.tags).map(([tag, color], i) => (
+                     <span key={i} className={`badge badge-sm font-montserrat font-semibold px-3  ${tagColors[color] || "bg-gray-300 text-black"}`}>
+                        {tag}
+                     </span>
+                  ))}
+               </div>
+            </div>
+            {index !== workExperience.length - 1 && <hr />}
+            </li>
+         ))}
+      </ul>
     </div>
   )
 }
