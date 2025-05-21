@@ -78,7 +78,7 @@ const navigationLinks = [
       icon: "fa-solid fa-industry"
      },
      goal: {
-      value: "The goal of Pixel8 Web Solutions and Consultancy Inc.'s frontend development department is to develop the designs produced by the UI/UX design team into fully usable systems and programs. To accomplish this, they work with Figma files that provide the visual design and page layout. The department also adds necessary functionality to pages utilizing a JSON server and static data for preliminary testing and validation, which speeds up the backend development process. Quasar Framework, VueJS, Git, and Axios are some of the important technologies and tools used, with an emphasis on ensuring that all work complies with company standards.",
+      value: "The goal of Pixel8 Web Solutions and Consultancy Inc.'s frontend development department is to develop the designs produced by the UI/UX design team into fully usable systems and programs. ",
       icon: "fa-solid fa-scroll"
      },
      tags: {

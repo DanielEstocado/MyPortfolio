@@ -3,6 +3,8 @@ import Hero from './sections/Hero'
 import NavigationBar from './assets/components/NavigationBar'
 import Footer from './sections/Footer'
 import About from './sections/About'
+import Projects from './sections/Projects'
+import Contact from './sections/Contact'
 
 const App = () => {
   return (
@@ -15,12 +17,12 @@ const App = () => {
       <section className='max-w-6xl mx-auto ' id='about' >
         <About/>
       </section>
-      {/* <section className='padding border max-w-5xl mx-auto border-slate bg-black'> */}
-        {/* Projects */}
-      {/* </section> */}
-      {/* <section className='padding-x sm:py-32 py-16 border max-w-5xl mx-auto border-slate bg-black'> */}
-        {/* Contacts */}
-      {/* </section> */}
+      <section className='max-w-6xl mx-auto lg:my-15' id='projects'>
+        <Projects/>
+      </section>
+      <section className='max-w-6xl mx-auto lg:mt-15' id='contact'>
+        <Contact/>
+      </section>
       <section className=' max-w-6xl mx-auto '>
         <Footer/>
       </section>

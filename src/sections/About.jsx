@@ -10,7 +10,7 @@ const About = () => {
   return (
     <section>
       
-      <div className='padding  lg:rounded-t-4xl bg-base-200 shadow-xl'>
+      <div className='padding lg:rounded-4xl bg-base-200 shadow-xl'>
          <h1 className='divider-start divider'>ABOUT ME</h1>
 
          {/* Introduction */}
