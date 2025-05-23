@@ -20,5 +20,6 @@ import react from "/src/assets/images/react.svg";
 import tailwindcss from "/src/assets/images/tailwindcss.svg";
 import vuejs from "/src/assets/images/vuejs.svg";
 import me from "/src/assets/images/me.jpg";
+import portfolio from "/src/assets/images/projects/portfolio.png";
 
-export { blender, csharp, cpp, css, firebase, figma, flutter, git, github, gitlab, godot, html, java, javascript, json, mysql, python, quasar, react, tailwindcss, vuejs, me };
+export { blender, csharp, cpp, css, firebase, figma, flutter, git, github, gitlab, godot, html, java, javascript, json, mysql, python, quasar, react, tailwindcss, vuejs, me, portfolio };

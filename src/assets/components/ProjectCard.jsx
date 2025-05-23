@@ -1,24 +1,39 @@
 import React from 'react'
 import { tagColors } from '../../constants'
 
-const ProjectCard = () => {
+const ProjectCard = ({title, description, imgUrl, status, tags}) => {
   return (
-    <div>
-      <div className="card bg-base-100  shadow-sm">
-         <figure>
-            <img
-               src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-               alt="Shoes" />
-         </figure>
-         <div className="card-body">
-            <h2 className="card-title">
-               Card Title
-               <div className="badge badge-secondary">NEW</div>
+    <div className='h-full cursor-pointer'>
+      <div className="card group bg-base-100  shadow-sm h-full relative rounded-2xl">
+         <div className='flex justify-end'>
+            <div className="  px-3 py-1 mb-2 text-neutral-500 mx-3 mt-3 text-xs">{status}</div>
+         </div>
+         <div className='px-6 overflow-hidden '>
+            <figure className=" py-1 overflow-hidden md:h-50 aspect-square w-full relative rounded-2xl border-1 border-primary">
+               <img
+                  src={imgUrl}
+                  alt="Project"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+               />
+            </figure>
+         </div>
+
+         <div className="card-body pt-3 flex flex-col flex-grow-0 ">
+            <h2 className="card-title uppercase">
+               {title}
+               
             </h2>
-            <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
-            <div className="card-actions justify-end">
-               <div className={`badge badge-sm font-montserrat font-semibold px-3 w-20 ${tagColors["primary"] || "bg-gray-300 text-black"}`}>Fashion</div>
-               <div className={`badge badge-sm font-montserrat font-semibold px-3 w-20 ${tagColors["secondary"] || "bg-gray-300 text-black"}`}>Products</div>
+            <p>{description}</p>
+            <div className=" flex flex-wrap gap-2 justify-start items-start mt-3">
+               {tags &&
+                  Object.entries(tags).map(([tag, color], index) => (
+                     <div
+                     key={index}
+                     className={`badge badge-sm font-montserrat text-xs font-semibold px-2 ${tagColors[color] || "bg-gray-300 text-black"}`}
+                     >
+                     {tag}
+                     </div>
+                  ))}
             </div>
          </div>
       </div>

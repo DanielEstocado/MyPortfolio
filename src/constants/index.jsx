@@ -1,4 +1,5 @@
 import { HomeIcon, UserCircleIcon, FolderIcon, PhoneIcon, BookOpenIcon } from '@heroicons/react/24/solid'
+import { portfolio } from '../assets/images';
 
 
 
@@ -147,6 +148,48 @@ const navigationLinks = [
    }
  ]
 
+ const myProjects = [
+   {
+       title: "Abakamay",
+       description: "This is my personal portfolio website, where I showcase my skills and projects ",
+       tags: {
+         Flask: "primary",
+         Python: "primary",
+         HTML: "primary",
+         CSS: "primary",
+         Javascript: "primary",
+         Firebase: "primary",
+         Git: "warning",
+         Gitlab: "warning",
+       },
+       status: "Not Deployed",
+       imgUrl: portfolio
+   },
+   {
+       title: "Quirk",
+       description: "This is my personal portfolio website, where I showcase my skills and projects.",
+       tags: {
+         flutter: "primary",
+         Dart: "primary",
+         firebase: "primary",
+       },
+       status: "Deployed",
+       imgUrl: portfolio
+   },
+   {
+       title: "My portfolio",
+       description: "This is my personal portfolio website, where I showcase my skills and projects.",
+       tags: {
+         react: "primary",
+         tailwindcss: "primary",
+       },
+       status: "In Progress",
+       imgUrl: portfolio
+   },
+
+ ]
+   
+ 
 
 
- export { navigationLinks, socials, personalInfo, workExperience,education, tagColors };
+ export { navigationLinks, socials, personalInfo, workExperience,education, tagColors, myProjects };
