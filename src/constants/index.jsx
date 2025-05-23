@@ -1,4 +1,4 @@
-import { HomeIcon, UserCircleIcon, FolderIcon, PhoneIcon } from '@heroicons/react/24/solid'
+import { HomeIcon, UserCircleIcon, FolderIcon, PhoneIcon, BookOpenIcon } from '@heroicons/react/24/solid'
 
 
 
@@ -15,13 +15,16 @@ const navigationLinks = [
    { href: "#about", label: "About", icon: <UserCircleIcon className="size-4 base-content group-hover:text-primary" /> },
    { href: "#projects", label: "Projects", icon: <FolderIcon className="size-4 base-content group-hover:text-primary" /> },
    { href: "#contact", label: "Contact", icon: <PhoneIcon className="size-4 base-content group-hover:text-primary" /> },
+   { href: "#guestbook", label: "Guestbook", icon: <BookOpenIcon className="size-4 base-content group-hover:text-primary" /> }
  ];
 
+ 
+
  const personalInfo = [
-   // {
-   //    label: "Daniel Lagapa Estocado",
-   //    icon: "fa-regular fa-id-card"
-   // },
+   {
+      label: "Daniel Lagapa Estocado",
+      icon: "fa-regular fa-id-card"
+   },
    {
       name: "Gender",
       label: "Male",
@@ -32,11 +35,7 @@ const navigationLinks = [
       label: "Filipino",
       icon: "fa-regular fa-flag"
    },
-   {
-      name: "Phone",
-      label: "09156444230",
-      icon: "fa-solid fa-phone"
-   },
+   
    {
       name: "Email",
       label: "estocado.daniel143@gmail.com",
@@ -51,7 +50,12 @@ const navigationLinks = [
       name: "Language",
       label: "English | Tagalog",
       icon: "fa-solid fa-language"
-   }
+   },
+   {
+      name: "Phone",
+      label: "09156444230",
+      icon: "fa-solid fa-phone"
+   },
  ]
 
 

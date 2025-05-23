@@ -9,7 +9,7 @@ const WorkTimeline = () => {
       <ul className='timeline timeline-vertical items-start timeline-snap-icon'>
          {workExperience.map((item, index) => (
             <li key={index} className='!grid-cols-none lg:gap-3'>
-            {index !== 0 && <hr />}
+            {index !== 0 && <hr className='md:block hidden bg-primary'/>}
             <div className="timeline-middle bg-primary px-1 rounded-full md:block hidden">
                <i className='fa-solid fa-computer text-base-100'></i>
             </div>
@@ -43,7 +43,7 @@ const WorkTimeline = () => {
                   ))}
                </div>
             </div>
-            {index !== workExperience.length - 1 && <hr />}
+            {index !== workExperience.length - 1 && <hr className='md:block hidden bg-primary'/>}
             </li>
          ))}
       </ul>

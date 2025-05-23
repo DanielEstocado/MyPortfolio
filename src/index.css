@@ -139,6 +139,10 @@
     @apply divider lg:text-primary lg:uppercase lg:text-6xl lg:font-montserrat lg:font-bold;
   }
 
+  .title-gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-primary dark:to-[#39d62b] to-[#4b4a94];
+  }
+
   .bg-cross {
     @apply pattern-dots pattern-base-content pattern-bg-base-100
     pattern-size-4 pattern-opacity-10  

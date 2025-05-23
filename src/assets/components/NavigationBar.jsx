@@ -3,7 +3,7 @@ import { navigationLinks } from '../../constants'
 
 const NavigationBar = () => {
   return (
-   <header className='sticky top-0 w-full  z-10  lg:fixed lg:top-2  lg:left-1/2 lg:-translate-x-1/2 lg:max-w-4xl  lg:rounded-full shadow-xl lg:bg-rgba-white backdrop-blur-sm '>
+   <header className='sticky top-0 w-full  z-10  lg:fixed lg:top-0  lg:left-1/2 lg:-translate-x-1/2 lg:max-w-6xl  lg:rounded-b-full shadow-xl lg:bg-rgba-white backdrop-blur-sm '>
       <div className="navbar bg-base-100 lg:bg-transparent px-10">
          <div className="navbar-start">
             <div className="dropdown">

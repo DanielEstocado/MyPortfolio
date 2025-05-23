@@ -7,7 +7,7 @@ const EducationTimeline = () => {
          <ul className='timeline timeline-vertical items-start timeline-snap-icon '>
             {education.map((item, index)=>(
                <li key={index} className='!grid-cols-none lg:gap-3'>
-                  {index !== 0 && <hr className=''/>}
+                  {index !== 0 && <hr className='md:block hidden text-primary bg-primary'/>}
                   <div className="timeline-middle md:block hidden">
                      <div className="timeline-middle bg-primary px-1 rounded-full">
                         <i className='fa-solid fa-book text-base-100'></i>
@@ -20,7 +20,7 @@ const EducationTimeline = () => {
                      {item.course && <h1>{item.course}</h1>}
                      {item.strand && <h1>{item.strand}</h1>}
                   </div>
-                  {index !== education.length-1 && <hr/>}
+                  {index !== education.length-1 && <hr className='md:block hidden bg-primary'/>}
                </li>
             ))}
          </ul>
