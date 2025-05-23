@@ -21,5 +21,7 @@ import tailwindcss from "/src/assets/images/tailwindcss.svg";
 import vuejs from "/src/assets/images/vuejs.svg";
 import me from "/src/assets/images/me.jpg";
 import portfolio from "/src/assets/images/projects/portfolio.png";
+import quirk from "/src/assets/images/projects/quirk.png";
+import abakamay from "/src/assets/images/projects/abakamay.png";
 
-export { blender, csharp, cpp, css, firebase, figma, flutter, git, github, gitlab, godot, html, java, javascript, json, mysql, python, quasar, react, tailwindcss, vuejs, me, portfolio };
+export { blender, csharp, cpp, css, firebase, figma, flutter, git, github, gitlab, godot, html, java, javascript, json, mysql, python, quasar, react, tailwindcss, vuejs, me, portfolio, quirk, abakamay };

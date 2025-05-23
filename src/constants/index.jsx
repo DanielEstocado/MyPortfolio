@@ -1,6 +1,27 @@
 import { HomeIcon, UserCircleIcon, FolderIcon, PhoneIcon, BookOpenIcon } from '@heroicons/react/24/solid'
-import { portfolio } from '../assets/images';
+import { portfolio, quirk, abakamay } from '../assets/images';
 
+const tagCategoryMap = {
+  Git: "warning",
+  Gitlab: "warning",
+  Github: "warning",
+  Figma: "warning",
+  Skype: "info",
+  VueJs: "secondary",
+  Quasar: "primary",
+  Axios: "error",
+  Flask: "primary",
+  Python: "secondary",
+  HTML: "primary",
+  CSS: "primary",
+  Javascript: "secondary",
+  Firebase: "error",
+  Flutter: "primary",
+  Dart: "secondary",
+  react: "primary",
+  Tailwind: "primary",
+  React: "primary",
+};
 
 
 const tagColors = {
@@ -86,15 +107,7 @@ const navigationLinks = [
       value: "The goal of Pixel8 Web Solutions and Consultancy Inc.'s frontend development department is to develop the designs produced by the UI/UX design team into fully usable systems and programs. ",
       icon: "fa-solid fa-scroll"
      },
-     tags: {
-      VueJs: "primary",
-      Quasar: "primary",
-      Axios: "primary",
-      Git: "warning",
-      Gitlab: "warning",
-      Figma: "warning",
-      Skype: "info",
-     }
+     tags: ["VueJs", "Quasar", "Axios", "Git", "Gitlab", "Figma", "Skype"]
    },
    
  ];
@@ -152,37 +165,30 @@ const navigationLinks = [
    {
        title: "Abakamay",
        description: "This is my personal portfolio website, where I showcase my skills and projects ",
-       tags: {
-         Flask: "primary",
-         Python: "primary",
-         HTML: "primary",
-         CSS: "primary",
-         Javascript: "primary",
-         Firebase: "primary",
-         Git: "warning",
-         Gitlab: "warning",
-       },
+       tags: [
+         "Flask",
+         "Python",
+         "HTML",
+         "CSS",
+         "Javascript",
+         "Firebase",
+         "Git",
+         "Gitlab"
+         ],
        status: "Not Deployed",
-       imgUrl: portfolio
+       imgUrl: abakamay
    },
    {
        title: "Quirk",
        description: "This is my personal portfolio website, where I showcase my skills and projects.",
-       tags: {
-         flutter: "primary",
-         Dart: "primary",
-         firebase: "primary",
-       },
+       tags: ["Flutter", "Dart", "Firebase"],
        status: "Deployed",
-       imgUrl: portfolio
+       imgUrl: quirk
    },
    {
        title: "My portfolio",
        description: "This is my personal portfolio website, where I showcase my skills and projects.",
-       tags: {
-         react: "primary",
-         tailwindcss: "primary",
-       },
+       tags: ["React", "Tailwind", "Javascript", "Git", "Github"],
        status: "In Progress",
        imgUrl: portfolio
    },
@@ -192,4 +198,4 @@ const navigationLinks = [
  
 
 
- export { navigationLinks, socials, personalInfo, workExperience,education, tagColors, myProjects };
+ export { navigationLinks, socials, personalInfo, workExperience,education, tagColors, myProjects, tagCategoryMap };

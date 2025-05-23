@@ -1,5 +1,5 @@
 import React from 'react'
-import { tagColors } from '../../constants'
+import { tagColors, tagCategoryMap } from '../../constants'
 
 const ProjectCard = ({title, description, imgUrl, status, tags}) => {
   return (
@@ -8,8 +8,9 @@ const ProjectCard = ({title, description, imgUrl, status, tags}) => {
          <div className='flex justify-end'>
             <div className="  px-3 py-1 mb-2 text-neutral-500 mx-3 mt-3 text-xs">{status}</div>
          </div>
-         <div className='px-6 overflow-hidden '>
-            <figure className=" py-1 overflow-hidden md:h-50 aspect-square w-full relative rounded-2xl border-1 border-primary">
+         <div className='px-6 py-6 overflow-hidden relative border-y border-neutral-700'>
+            <div className="absolute inset-0 bg-cross z-0 rounded-2xl" />
+            <figure className=" py-1 overflow-hidden md:h-50 aspect-square w-full relative rounded-2xl ">
                <img
                   src={imgUrl}
                   alt="Project"
@@ -26,14 +27,18 @@ const ProjectCard = ({title, description, imgUrl, status, tags}) => {
             <p>{description}</p>
             <div className=" flex flex-wrap gap-2 justify-start items-start mt-3">
                {tags &&
-                  Object.entries(tags).map(([tag, color], index) => (
-                     <div
-                     key={index}
-                     className={`badge badge-sm font-montserrat text-xs font-semibold px-2 ${tagColors[color] || "bg-gray-300 text-black"}`}
-                     >
-                     {tag}
-                     </div>
-                  ))}
+              tags.map((tag, index) => {
+                const tagCategory = tagCategoryMap[tag] || "default"
+                const tagClass = tagColors[tagCategory] || "bg-gray-300 text-black"
+                return (
+                  <div
+                    key={index}
+                    className={`badge badge-sm font-montserrat text-xs font-semibold px-2 ${tagClass}`}
+                  >
+                    {tag}
+                  </div>
+                )
+              })}
             </div>
          </div>
       </div>

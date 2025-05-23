@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { workExperience } from '../../constants'
-import { tagColors } from '../../constants'
+import { tagColors, tagCategoryMap } from '../../constants'
 
 const WorkTimeline = () => {
   return (
@@ -36,11 +36,18 @@ const WorkTimeline = () => {
                   <h3 className='my-2 '>{item.goal.value}</h3>
                </div>
                <div className="flex flex-wrap gap-2 mt-4 px-5">
-                  {Object.entries(item.tags).map(([tag, color], i) => (
-                     <span key={i} className={`badge badge-sm font-montserrat font-semibold px-3  ${tagColors[color] || "bg-gray-300 text-black"}`}>
+                  {item.tags.map((tag, i) => {
+                     const category = tagCategoryMap[tag] || "primary";
+                     const colorClass = tagColors[category] || "bg-gray-300 text-black"; 
+                     return (
+                        <span
+                        key={i}
+                        className={`badge badge-sm font-montserrat font-semibold px-3 ${colorClass}`}
+                        >
                         {tag}
-                     </span>
-                  ))}
+                        </span>
+                     );
+                  })}
                </div>
             </div>
             {index !== workExperience.length - 1 && <hr className='md:block hidden bg-primary'/>}
