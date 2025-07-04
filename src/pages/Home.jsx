@@ -1,11 +1,11 @@
 import React from 'react'
-import Hero from './Hero'
+import Hero from '../sections/Hero'
 import NavigationBar from '../assets/components/NavigationBar'
-import Footer from './Footer'
-import About from './About'
-import Projects from './Projects'
-import Contact from './Contact'
-import MyInfo from './MyInfo'
+import Footer from '../sections/Footer'
+import About from '../sections/About'
+import Projects from '../sections/Projects'
+import Contact from '../sections/Contact'
+import MyInfo from '../sections/MyInfo'
 
 const Home = () => {
    return (

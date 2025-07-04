@@ -1,5 +1,6 @@
 import React from 'react'
 import { navigationLinks } from '../../constants'
+import { Link } from 'react-router-dom'
 
 const NavigationBar = () => {
   return (
@@ -17,22 +18,22 @@ const NavigationBar = () => {
                      <li className='' key={link.label}>
                         <div className='flex items-center gap-2 group'>
                            {link.icon}
-                           <a href={link.href} className=''>{link.label}</a>
+                           <Link to={link.href} className=''>{link.label}</Link>
                         </div>
                      </li>
                   ))}
                </ul>
             </div>
-            <a className="btn btn-ghost text-xl border-0 font-bastliga font-light">DanielEstocado</a>
+            <Link to={"/"} className="btn btn-ghost text-xl border-0 font-bastliga font-light">DanielEstocado</Link>
          </div>
          <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 text-md ">
                {navigationLinks.map((link)=> (
                   <li className='' key={link.label}>
-                     <a href={link.href} className='flex items-center gap-2 group'>
+                     <Link to={link.href} className='flex items-center gap-2 group'>
                         {link.icon}
                         <span>{link.label}</span>
-                     </a>
+                     </Link>
                   </li>
                ))}
             </ul>

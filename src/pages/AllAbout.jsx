@@ -1,7 +1,7 @@
 import React from 'react'
 import NavigationBar from '../assets/components/NavigationBar'
 
-const AllProjects = () => {
+const AllAbout = () => {
   return (
     <main className='relative mx-auto overflow-x-hidden'>
       <NavigationBar/>
@@ -9,4 +9,4 @@ const AllProjects = () => {
   )
 }
 
-export default AllProjects
+export default AllAbout

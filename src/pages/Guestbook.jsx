@@ -1,10 +1,11 @@
 import React from 'react'
+import NavigationBar from '../assets/components/NavigationBar'
 
 const Guestbook = () => {
   return (
-    <div>
-      Guestbook Page
-    </div>
+    <main className='relative mx-auto overflow-x-hidden'>
+      <NavigationBar/>
+    </main>
   )
 }
 
