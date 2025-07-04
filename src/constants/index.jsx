@@ -34,10 +34,9 @@ const tagColors = {
 
 const navigationLinks = [
    { href: "#home", label: "Home", icon: <HomeIcon className="size-4 base-content group-hover:text-primary" /> },
-   { href: "#about", label: "About", icon: <UserCircleIcon className="size-4 base-content group-hover:text-primary" /> },
    { href: "#projects", label: "Projects", icon: <FolderIcon className="size-4 base-content group-hover:text-primary" /> },
+   { href: "#guestbook", label: "Guestbook", icon: <BookOpenIcon className="size-4 base-content group-hover:text-primary" /> },
    { href: "#contact", label: "Contact", icon: <PhoneIcon className="size-4 base-content group-hover:text-primary" /> },
-   { href: "#guestbook", label: "Guestbook", icon: <BookOpenIcon className="size-4 base-content group-hover:text-primary" /> }
  ];
 
  
