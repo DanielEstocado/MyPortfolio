@@ -27,9 +27,9 @@ const Home = () => {
          <section className='max-w-5xl mx-auto lg:my-15' id='contact'>
             <Contact/>
          </section>
-         <section className=' max-w-5xl mx-auto '>
+         {/* <section className=' max-w-5xl mx-auto '>
             <Footer/>
-         </section>
+         </section> */}
       </main>
   )
 }
