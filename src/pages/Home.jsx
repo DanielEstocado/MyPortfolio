@@ -13,22 +13,22 @@ const Home = () => {
          <NavigationBar/>
          <div className="absolute inset-0 -z-10 bg-cross"></div>
          <section  id="home">
-         <Hero/>
+            <Hero/>
          </section>
-         <section  id='about'>
-         <About/>
+         <section className='max-w-5xl mx-auto' id='about'>
+            <About/>
          </section>
-         <section className='max-w-6xl mx-auto ' >
-         <MyInfo/>
+         <section className='max-w-5xl mx-auto ' >
+            <MyInfo/>
          </section>
-         <section className='max-w-6xl mx-auto lg:my-15' id='projects'>
-         <Projects/>
+         <section className='max-w-5xl mx-auto lg:my-15' id='projects'>
+            <Projects/>
          </section>
-         <section className='max-w-6xl mx-auto lg:mt-15' id='contact'>
-         <Contact/>
+         <section className='max-w-5xl mx-auto lg:my-15' id='contact'>
+            <Contact/>
          </section>
-         <section className=' max-w-6xl mx-auto '>
-         <Footer/>
+         <section className=' max-w-5xl mx-auto '>
+            <Footer/>
          </section>
       </main>
   )

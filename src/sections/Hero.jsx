@@ -25,7 +25,8 @@ const Hero = () => {
                   autoStart: true,
                   loop: true,
                   cursor: '_',
-                }}
+                  delay: 60
+                }} 
               />
             </div>
           </div>
