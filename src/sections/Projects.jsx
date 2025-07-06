@@ -16,7 +16,7 @@ const Projects = () => {
         ))}
       </div>
       <div className='flex justify-end items-center padding-x'>
-         <Button text="See More"/>
+         <Button text="See More" link="/projects"/>
       </div>
     </div>
   )

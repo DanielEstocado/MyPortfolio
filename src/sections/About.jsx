@@ -19,7 +19,7 @@ const About = () => {
             <p className='text-center lg:max-w-4xl'>I am a self-motivated and detail-oriented individual, known for my approachable nature and strong problem-solving skills. I have experience in various web development tools, frameworks, and programming languages, with expertise in both front-end and back-end technologies. I bring strong communication, teamwork, and adaptability in dynamic work environments. Passionate about continuous learning and innovation.</p>
          </section>
          <div className='flex justify-center items-center mt-4'>
-            <Button text="More about me"/>
+            <Button text="More about me" link="/about"/>
          </div>
       </div>  
       
