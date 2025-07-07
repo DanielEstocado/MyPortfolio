@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../assets/components/Button'
+import Button from '../components/Button'
 import { me } from '../assets/images'
 
 const About = () => {

@@ -1,5 +1,5 @@
 import React from 'react'
-import { tagColors, tagCategoryMap } from '../../constants'
+import { tagColors, tagCategoryMap } from '../constants'
 
 const ProjectCard = ({title, description, imgUrl, tags}) => {
   return (

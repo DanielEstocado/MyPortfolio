@@ -1,6 +1,6 @@
 import React from 'react'
-import ProjectCard from '../assets/components/ProjectCard'
-import Button from '../assets/components/Button'
+import ProjectCard from '../components/ProjectCard'
+import Button from '../components/Button'
 import { myProjects } from '../constants'
 
 const Projects = () => {

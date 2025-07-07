@@ -1,5 +1,5 @@
 import React from 'react'
-import MyInfoCard from '../assets/components/MyInfoCard'
+import MyInfoCard from '../components/MyInfoCard'
 import Typewriter from 'typewriter-effect';
 import { socials } from '../constants';
 

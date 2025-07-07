@@ -1,5 +1,5 @@
 import React from 'react'
-import { MarqueeFE, MarqueePL, MarqueeTP } from '../../constants/marqueeData'
+import { MarqueeFE, MarqueePL, MarqueeTP } from '../constants/marqueeData'
 // eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react"
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Button from '../assets/components/Button'
+import Button from '../components/Button'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {

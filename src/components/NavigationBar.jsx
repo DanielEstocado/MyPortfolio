@@ -1,5 +1,5 @@
 import React from 'react'
-import { navigationLinks } from '../../constants'
+import { navigationLinks } from '../constants'
 import { Link } from 'react-router-dom'
 
 const NavigationBar = () => {

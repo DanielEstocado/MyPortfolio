@@ -1,8 +1,8 @@
 import React from 'react'
 
-import EducationTimeline from '../assets/components/EducationTimeline'
-import WorkTimeline from '../assets/components/WorkTimeline'
-import DevStackMarquee from '../assets/components/DevStackMarquee'
+import EducationTimeline from '../components/EducationTimeline'
+import WorkTimeline from '../components/WorkTimeline'
+import DevStackMarquee from '../components/DevStackMarquee'
 
 
 

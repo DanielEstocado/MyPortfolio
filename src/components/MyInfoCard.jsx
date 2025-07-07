@@ -1,5 +1,5 @@
 import React from 'react'
-import {me} from '../images'
+import {me} from '../assets/images'
 
 const InfoItem = ({ icon, title, label }) => (
    <div className="flex gap-5 items-center flex-1 dark:text-nord-text text-forest-text border-0 border-primary rounded-full p-1 dark:bg-nord-300">

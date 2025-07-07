@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { workExperience } from '../../constants'
-import { tagColors, tagCategoryMap } from '../../constants'
+import { workExperience } from '../constants'
+import { tagColors, tagCategoryMap } from '../constants'
 
 const WorkTimeline = () => {
   return (
