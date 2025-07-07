@@ -5,7 +5,7 @@ import { myProjects } from '../constants'
 
 const Projects = () => {
   return (
-    <div className='  lg:pt-24 lg:pb-12 py-18 lg:rounded-4xl bg-base-300 shadow-xl lg:border dark:border-neutral-500 border-gray-400'>
+    <div className='  lg:pt-24 lg:pb-12 py-18 lg:rounded-4xl bg-base-300 shadow-xl '>
       <div className='divider my-header'><h1 className='title-gradient'>Projects</h1></div>
       
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-16 pb-10 padding-x'>

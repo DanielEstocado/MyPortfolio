@@ -36,17 +36,17 @@ const Contact = () => {
 }
 
   return (
-    <div className=' bg-base-200 shadow-xl lg:rounded-2xl'>
+    <div className=' bg-base-200 shadow-xl lg:rounded-2xl lg:border dark:border-neutral-500 border-gray-400'>
       
       <div className='  items-center '>
-        <div className='px-16 pt-24 pb-6'>
+        <div className='padding-x py-12 lg:pt-24 pb-6'>
           <div className=' my-header divider-start mb-2'>
             <h1 className='title-gradient'>Contact Me</h1>
           </div>
           <p className='text-start lg:max-w-4xl'>I'd love to hear from you! Whether it's a question, a collaboration, or just a friendly hello. Feel free to get in touch.</p>
         </div>
         <h1 className='divider-start divider hidden lg:flex'/>
-        <form onSubmit={handleContactSubmit} className='mt-8 px-16 pb-12'>
+        <form onSubmit={handleContactSubmit} className='lg:mt-8 mt-4 padding-x pb-12'>
           <h2 className=' uppercase font-montserrat font-bold text-2xl title-gradient mb-3'>Your Email</h2>
           <label className="input validator rounded-md w-full  ">
             <input type="email" placeholder="johndoe@gmail.com" className="input text-lg px-6 py-4" value={email} onChange={(e)=>{setEmail(e.target.value)}} required/>

@@ -136,7 +136,7 @@
   }
 
   .my-header {
-     @apply lg:text-primary lg:uppercase lg:text-6xl lg:font-montserrat lg:font-bold;
+     @apply text-primary uppercase text-3xl lg:text-6xl font-montserrat font-bold;
   }
 
   .my-button {

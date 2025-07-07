@@ -24,13 +24,13 @@ const NavigationBar = () => {
                   ))}
                </ul>
             </div>
-            <Link to={"/"} className="btn btn-ghost text-xl border-0 font-bastliga font-light">DanielEstocado</Link>
+            <Link to={"/"} className="btn btn-ghost text-xl border-0 font-bastliga font-light" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>DanielEstocado</Link>
          </div>
          <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1 text-md ">
                {navigationLinks.map((link)=> (
                   <li className='' key={link.label}>
-                     <Link to={link.href} className='flex items-center gap-2 group'>
+                     <Link to={link.href} className='flex items-center gap-2 group' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                         {link.icon}
                         <span>{link.label}</span>
                      </Link>

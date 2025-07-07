@@ -10,11 +10,11 @@ const About = () => {
   return (
     <section>
       
-      <div className=' py-18 lg:rounded-4xl bg-base-200 shadow-xl'>
-         <h1 className='divider-start divider'/>
+      <div className=' py-18 lg:rounded-4xl bg-base-200 shadow-xl lg:border dark:border-neutral-500 border-gray-400'>
+         
 
          {/* Dev Stack */}
-         <section className='my-10  flex flex-col gap-10'>
+         <section className='mb-10  flex flex-col gap-10'>
             <h2 className='padding-x uppercase font-montserrat font-bold text-2xl title-gradient'>Dev Stack</h2>
             <div className='md:px-16'>
                <DevStackMarquee/>
