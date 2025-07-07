@@ -6,18 +6,21 @@ import AllProjects from './pages/AllProjects.jsx'
 import Guestbook from './pages/Guestbook.jsx'
 import AllContacts from './pages/AllContacts.jsx'
 import AllAbout from './pages/AllAbout.jsx'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, RouterProvider, createRoutesFromElements, Route } from 'react-router-dom'
 
 const router = createBrowserRouter(
-  [
-    { path: "", element: <App/> },
-    { path: "/projects", element: <AllProjects/> },
-    { path: "/about", element: <AllAbout/> },
-    { path: "/guestbook", element: <Guestbook/> },
-    { path: "/contact", element: <AllContacts/> },
-  ],
+  createRoutesFromElements(
+    <>
+      <Route path="/" element={<App />} />
+      <Route path="/projects" element={<AllProjects />} />
+      <Route path="/about" element={<AllAbout />} />
+      <Route path="/guestbook" element={<Guestbook />} />
+      <Route path="/contact" element={<AllContacts />} />
+      <Route path="*" element={<App />} /> 
+    </>
+  ),
   {
-    basename: "/MyPortfolio"
+    basename: '/MyPortfolio',
   }
 );
 
