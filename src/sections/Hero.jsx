@@ -1,6 +1,7 @@
 import React from 'react'
 import MyInfoCard from '../assets/components/MyInfoCard'
 import Typewriter from 'typewriter-effect';
+import { socials } from '../constants';
 
 const Hero = () => {
   return (
@@ -29,6 +30,18 @@ const Hero = () => {
                 }} 
               />
             </div>
+          </div>
+          <div className="flex gap-4 mt-8 text-2xl justify-center">
+            {socials.map((social, index) => (
+              <button
+                key={index}
+                className="items-center rounded-full h-10 w-10 my-button"
+                aria-label={social.label}
+                title={social.label}
+              >
+                <i className={`${social.icon} text-base`}></i>
+              </button>
+            ))}
           </div>
         </div>
         

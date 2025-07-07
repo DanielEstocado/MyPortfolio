@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Button = ({ text, link, onClick }) => {
-  const commonStyles = "rounded-xs px-5 py-2.5 overflow-hidden group bg-primary relative hover:bg-gradient-to-r hover:from-primary dark:hover:to-forest-darker hover:to-nord-darker text-white hover:ring-2 hover:ring-offset-2 hover:ring-primary transition-all ease-out duration-300"
+const Button = ({ text, link, onClick, additionalClass="" }) => {
 
   const content = (
     <>
@@ -16,14 +15,14 @@ const Button = ({ text, link, onClick }) => {
 
   if (link) {
     return (
-      <Link to={link} className={commonStyles}>
+      <Link to={link} className={`rounded-xs px-5 py-3 overflow-hidden group my-button ${additionalClass}`}>
         {content}
       </Link>
     )
   }
 
   return (
-    <button onClick={onClick} className={commonStyles}>
+    <button onClick={onClick} className={`rounded-xs px-5 py-3 overflow-hidden group my-button ${additionalClass}`}>
       {content}
     </button>
   )

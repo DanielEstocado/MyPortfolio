@@ -135,8 +135,12 @@
     @apply text-lg  font-roboto-mono;
   }
 
-  .divider-header{
-    @apply divider lg:text-primary lg:uppercase lg:text-6xl lg:font-montserrat lg:font-bold;
+  .my-header {
+     @apply lg:text-primary lg:uppercase lg:text-6xl lg:font-montserrat lg:font-bold;
+  }
+
+  .my-button {
+     @apply bg-primary relative hover:bg-gradient-to-r hover:from-primary dark:hover:to-forest-darker hover:to-nord-darker text-white hover:ring-2 hover:ring-offset-2 hover:ring-primary transition-all ease-out duration-300;
   }
 
   .title-gradient {

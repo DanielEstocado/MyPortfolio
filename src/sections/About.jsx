@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section>
       <div className='bg-base-300 shadow-xl lg:pt-24 lg:pb-20 py-18 lg:my-15 lg:border dark:border-neutral-500 border-gray-400  lg:rounded-2xl'>
-         <div className=' divider-header pb-6'><h1 className='title-gradient'>About Me</h1></div>
+         <div className=' divider my-header pb-6'><h1 className='title-gradient'>About Me</h1></div>
          <section className='py-6 padding-x lg:flex justify-center lg:flex-row-reverse items-center gap-6'>
             <div className='relative'>
                <div className="inline-grid *:[grid-area:1/1] absolute top-2 left-[calc(50%+55px)] -translate-x-1/2 lg:left-auto lg:right-2">
