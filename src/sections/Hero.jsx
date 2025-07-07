@@ -43,16 +43,19 @@ const Hero = () => {
           <div className='flex justify-center items-center lg:mt-8 mt-10'>
             <div className="grid grid-cols-3 lg:flex gap-4 text-2xl justify-items-center lg:justify-center lg:w-full w-40">
             {socials.map((social, index) => (
-              <button
+              <a
                 key={index}
-                className="items-center rounded-full h-10 w-10 my-button"
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="items-center flex justify-center rounded-full h-10 w-10 my-button"
                 aria-label={social.label}
                 title={social.label}
               >
                 <i className={`${social.icon} text-base`}></i>
-              </button>
+              </a>
             ))}
-          </div>
+            </div>
           </div>
         </div>
         

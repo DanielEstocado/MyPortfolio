@@ -23,5 +23,8 @@ import me from "/src/assets/images/me.jpg";
 import portfolio from "/src/assets/images/projects/portfolio.png";
 import quirk from "/src/assets/images/projects/quirk.png";
 import abakamay from "/src/assets/images/projects/abakamay.png";
+import guestbook from "/src/assets/images/projects/guestbook.png";
+import nike from "/src/assets/images/projects/nike.png";
+import platformer from "/src/assets/images/projects/platformer.png";
 
-export { blender, csharp, cpp, css, firebase, figma, flutter, git, github, gitlab, godot, html, java, javascript, json, mysql, python, quasar, react, tailwindcss, vuejs, me, portfolio, quirk, abakamay };
+export { blender, csharp, cpp, css, firebase, figma, flutter, git, github, gitlab, godot, html, java, javascript, json, mysql, python, quasar, react, tailwindcss, vuejs, me, portfolio, quirk, abakamay, guestbook, nike, platformer };

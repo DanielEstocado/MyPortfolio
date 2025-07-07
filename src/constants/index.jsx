@@ -1,5 +1,5 @@
 import { HomeIcon, UserCircleIcon, FolderIcon, PhoneIcon, BookOpenIcon } from '@heroicons/react/24/solid'
-import { portfolio, quirk, abakamay } from '../assets/images';
+import { portfolio, quirk, abakamay, guestbook, nike, platformer } from '../assets/images';
 
 const tagCategoryMap = {
   Git: "warning",
@@ -21,6 +21,8 @@ const tagCategoryMap = {
   react: "primary",
   Tailwind: "primary",
   React: "primary",
+  Godot: "warning",
+  Gdscript: "primary"
 };
 
 
@@ -137,34 +139,40 @@ const navigationLinks = [
  const socials =[
    {
       label: "Facebook",
-      icon: "fa-brands fa-facebook-f"
+      icon: "fa-brands fa-facebook-f",
+      link: "https://www.facebook.com/danielestocado639"
    },
    {
       label: "Messenger",
-      icon: "fa-brands fa-facebook-messenger"
+      icon: "fa-brands fa-facebook-messenger",
+      link: "https://m.me/danielestocado639"
    },
    {
       label: "Github",
-      icon: "fa-brands fa-github-alt"
+      icon: "fa-brands fa-github-alt",
+      link: "https://github.com/DanielEstocado"
    },
    {
       label: "LinkedIn",
-      icon : "fa-brands fa-linkedin-in"
+      icon : "fa-brands fa-linkedin-in",
+      link: "http://linkedin.com/in/daniel-estocado-297b8728b/"
    },
    {
       label: "daily.dev",
-      icon: "fa-solid fa-code"
+      icon: "fa-solid fa-code",
+      link: "https://app.daily.dev/daniel143"
    },
    {
       label: "Gmail",
-      icon: "fa-regular fa-envelope"
+      icon: "fa-regular fa-envelope",
+      link: "mailto:estocado.daniel143@gmail.com"
    }
  ]
 
  const myProjects = [
    {
        title: "Abakamay",
-       description: "This is my personal portfolio website, where I showcase my skills and projects ",
+       description: 'Development of Filipino "Abakada" Sign Language Through Data-Driven Image Processing Approach',
        tags: [
          "Flask",
          "Python",
@@ -180,17 +188,38 @@ const navigationLinks = [
    },
    {
        title: "Quirk",
-       description: "This is my personal portfolio website, where I showcase my skills and projects.",
+       description: "Android and Web Based Quiz Game using Flutter-Firebase",
        tags: ["Flutter", "Dart", "Firebase"],
        status: "Deployed",
        imgUrl: quirk
    },
    {
        title: "My portfolio",
-       description: "This is my personal portfolio website, where I showcase my skills and projects.",
+       description: "This is my personal portfolio website, where I showcase my skills and projects",
        tags: ["React", "Tailwind", "Javascript", "Git", "Github"],
        status: "In Progress",
        imgUrl: portfolio
+   },
+   {
+       title: "My Guestbook",
+       description: "A personal project where you can login using your Google or Github account to leave a message",
+       tags: ["React", "Tailwind", "Javascript", "Git", "Github", "Firebase"],
+       status: "Deployed",
+       imgUrl: guestbook
+   },
+   {
+       title: "Nike Website Clone Design",
+       description: "A modern and responsive Nike-themed website clone",
+       tags: ["React", "Tailwind", "Javascript", "Git", "Github"],
+       status: "Deployed",
+       imgUrl: nike
+   },
+   {
+       title: "Platformer Game",
+       description: "A simple and quick platformer game that encompasses basic game algorithms and UI",
+       tags: ["Godot", "Gdscript"],
+       status: "Not Deployed",
+       imgUrl: platformer
    },
 
  ]
