@@ -1,9 +1,9 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-@font-face{
+@font-face {
   font-family: Bastliga;
   src: url("assets/fonts/Bastliga One.ttf") format("truetype");
 }
@@ -13,11 +13,11 @@
 
 @theme {
   /* Fonts */
-  --font-oswald: 'Oswald', sans-serif;
-  --font-roboto-mono: 'Roboto Mono', monospace;
-  --font-raleway: 'Raleway', sans-serif;
-  --font-montserrat: 'Montserrat', sans-serif;
-  --font-bastliga: 'Bastliga', sans-serif;
+  --font-oswald: "Oswald", sans-serif;
+  --font-roboto-mono: "Roboto Mono", monospace;
+  --font-raleway: "Raleway", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-bastliga: "Bastliga", sans-serif;
 
   /* Colors */
   --my-color-primary: #747bff;
@@ -62,9 +62,6 @@
   --pattern-size-20: 5rem;
   --pattern-size-24: 6rem;
   --pattern-size-32: 8rem;
-
-  
-  
 }
 
 @plugin "daisyui" {
@@ -74,7 +71,6 @@
   exclude: ;
   prefix: ;
   logs: true;
-  
 }
 
 /* @plugin "daisyui/theme" {
@@ -107,13 +103,10 @@
   font-family: var(--font-roboto-mono), sans-serif;
 }
 
-::selection{
+::selection {
   background-color: var(--color-primary);
   color: var(--color-white);
 }
-
-
-
 
 @layer utilities {
   .padding {
@@ -136,11 +129,11 @@
   }
 
   .my-header {
-     @apply text-primary uppercase text-3xl lg:text-6xl font-montserrat font-bold;
+    @apply text-primary uppercase text-3xl lg:text-6xl font-montserrat font-bold;
   }
 
   .my-button {
-     @apply bg-primary relative hover:bg-gradient-to-r hover:from-primary dark:hover:to-forest-darker hover:to-nord-darker text-white hover:ring-2 hover:ring-offset-2 hover:ring-primary transition-all ease-out duration-300;
+    @apply bg-primary relative hover:bg-gradient-to-r hover:from-primary dark:hover:to-forest-darker hover:to-nord-darker text-white hover:ring-2 hover:ring-offset-2 hover:ring-primary transition-all ease-out duration-300;
   }
 
   .title-gradient {
@@ -149,9 +142,6 @@
 
   .bg-cross {
     @apply pattern-dots pattern-base-content pattern-bg-base-100
-    pattern-size-4 pattern-opacity-10  
+    pattern-size-4 pattern-opacity-10;
   }
-
 }
-
-  

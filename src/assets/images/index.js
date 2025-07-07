@@ -19,12 +19,47 @@ import quasar from "/src/assets/images/quasar.svg";
 import react from "/src/assets/images/react.svg";
 import tailwindcss from "/src/assets/images/tailwindcss.svg";
 import vuejs from "/src/assets/images/vuejs.svg";
-import me from "/src/assets/images/me.jpg";
-import portfolio from "/src/assets/images/projects/portfolio.png";
-import quirk from "/src/assets/images/projects/quirk.png";
-import abakamay from "/src/assets/images/projects/abakamay.png";
-import guestbook from "/src/assets/images/projects/guestbook.png";
-import nike from "/src/assets/images/projects/nike.png";
-import platformer from "/src/assets/images/projects/platformer.png";
 
-export { blender, csharp, cpp, css, firebase, figma, flutter, git, github, gitlab, godot, html, java, javascript, json, mysql, python, quasar, react, tailwindcss, vuejs, me, portfolio, quirk, abakamay, guestbook, nike, platformer };
+import me from "/src/assets/images/photos/me.webp";
+import togaNoBG from "/src/assets/images/photos/toga-no-bg.webp";
+import toga from "/src/assets/images/photos/toga.webp";
+
+import portfolio from "/src/assets/images/projects/portfolio.webp";
+import quirk from "/src/assets/images/projects/quirk.webp";
+import abakamay from "/src/assets/images/projects/abakamay.webp";
+import guestbook from "/src/assets/images/projects/guestbook.webp";
+import nike from "/src/assets/images/projects/nike.webp";
+import platformer from "/src/assets/images/projects/platformer.webp";
+
+export {
+  blender,
+  csharp,
+  cpp,
+  css,
+  firebase,
+  figma,
+  flutter,
+  git,
+  github,
+  gitlab,
+  godot,
+  html,
+  java,
+  javascript,
+  json,
+  mysql,
+  python,
+  quasar,
+  react,
+  tailwindcss,
+  vuejs,
+  me,
+  portfolio,
+  quirk,
+  abakamay,
+  guestbook,
+  nike,
+  platformer,
+  togaNoBG,
+  toga,
+};

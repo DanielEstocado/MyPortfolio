@@ -8,7 +8,7 @@ const AllProjects = () => {
       <NavigationBar/>
       <section className='lg:h-[100vh] h-[calc(100vh-64px)] w-full'>
         <div className='flex-col flex justify-center items-center h-full'>
-          <span className='my-header title-gradient'>PROJECTS PAGE</span>
+          <span className='my-header title-gradient'>PORTFOLIO PAGE</span>
           <span className='text-neutral-500 text-center'>Oops! This page is currently under construction.</span>
           <span className='text-neutral-500 text-center'>The developer has some exciting ideas in the works.</span>
           <span className='text-neutral-500 text-center'>Stay tuned!</span>
