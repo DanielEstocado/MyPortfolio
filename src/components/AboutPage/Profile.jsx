@@ -5,7 +5,7 @@ import { myTags } from "../../constants";
 
 const Profile = () => {
   return (
-    <div className="overflow-y-auto md:max-h-full self-start lg:w-xl w-full bg-base-200 rounded-4xl p-6 shadow-xl border dark:border-neutral-500 border-gray-400 ">
+    <div className="lg:max-w-xs w-full bg-base-200 rounded-4xl p-6 shadow-xl border dark:border-neutral-500 border-gray-400 ">
       <div className="h-24 w-full relative mt-6 mb-4">
         <img
           src={togaBanner}
@@ -39,7 +39,7 @@ const Profile = () => {
           className="rounded-xl border p-2 px-4 text-xs md:text-sm font-bold font-montserrat text-base-content inline-flex items-center gap-1 group-hover:bg-base-100 transition-colors  duration-200"
         >
           <LinkIcon height={20} width={20} />
-          <span>danielestocado.netlify.app/</span>
+          <span>danielestocado.netlify.app</span>
         </a>
       </div>
 
