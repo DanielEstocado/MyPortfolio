@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { navigationLinks } from "../constants";
 import { Link } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import { motion, useScroll, useMotionValueEvent } from "motion/react";
 
 const NavigationBar = () => {
+
+   const { scrollY } = useScroll();
+   const [hidden, setHidden] = useState(false)
+
+   useMotionValueEvent(scrollY, "change", (latest) => {
+      const previous = scrollY.getPrevious();
+      if (latest > previous && latest > 150) {
+         setHidden(true);
+      } else{
+         setHidden(false)
+      }
+   })
+
+
   return (
-    <header className="sticky top-0 w-full  z-10  lg:fixed lg:top-0  lg:left-1/2 lg:-translate-x-1/2 lg:max-w-6xl  lg:rounded-b-full shadow-xl lg:bg-rgba-white backdrop-blur-sm ">
+    <motion.nav
+      variants={{ visible: {y: 0}, hidden: {y: "-100%"} }}
+      animate={hidden? "hidden": "visible"}
+      transition={{ duration: 0.35, ease: "easeInOut" }}
+      className="sticky top-0 w-full  z-10  lg:fixed lg:top-0  lg:left-1/2 lg:-translate-x-1/2 lg:max-w-6xl  lg:rounded-b-full shadow-xl lg:bg-rgba-white backdrop-blur-sm "
+    >
       <div className="navbar bg-base-100 lg:bg-transparent px-10">
         <div className="navbar-start">
           <div className="dropdown">
@@ -107,7 +128,7 @@ const NavigationBar = () => {
           </label>
         </div>
       </div>
-    </header>
+    </motion.nav>
   );
 };
 
