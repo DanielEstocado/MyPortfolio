@@ -46,6 +46,16 @@ const tagColors = {
   error: "dark:bg-[#2c1d1c] dark:text-error bg-warning",
 };
 
+const myTags = [
+  "Junior Dev",
+  "Game Dev",
+  "Frontend Dev",
+  "Traditional Artist",
+  "Digital Artist",
+  "Backend Dev",
+  "Fullstack Dev"
+];
+
 const navigationLinks = [
   {
     href: "/",
@@ -272,4 +282,5 @@ export {
   tagColors,
   myProjects,
   tagCategoryMap,
+  myTags
 };

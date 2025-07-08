@@ -23,6 +23,7 @@ import vuejs from "/src/assets/images/vuejs.svg";
 import me from "/src/assets/images/photos/me.webp";
 import togaNoBG from "/src/assets/images/photos/toga-no-bg.webp";
 import toga from "/src/assets/images/photos/toga.webp";
+import togaBanner from "/src/assets/images/photos/toga-banner.webp";
 
 import portfolio from "/src/assets/images/projects/portfolio.webp";
 import quirk from "/src/assets/images/projects/quirk.webp";
@@ -62,4 +63,5 @@ export {
   platformer,
   togaNoBG,
   toga,
+  togaBanner
 };

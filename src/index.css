@@ -116,6 +116,10 @@
   .padding-x {
     @apply sm:px-16 px-8;
   }
+
+  .margin-x {
+    @apply sm:mx-16 mx-8;
+  }
   .header-text {
     @apply text-6xl font-oswald font-bold;
   }
